@@ -1,0 +1,30 @@
+<html>
+    <header>
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+    </header>
+    
+    <app-navbar></app-navbar>
+
+    <div class="box">
+        <div class="container-4" style="margin: 70px;">
+            <h1>Buscar por matricula</h1>
+            <p>Busque su vehículo introduciendo su matricula para ver todas las Transacciones relacionadas</p>
+            
+            <input type="search" ng-model="search" id="search" placeholder="Search..." />
+            <button class="butt" (click)="obtenerTransaccionesCoche()">
+               <i class="fa fa-search "></i> 
+            </button>
+        </div>
+    </div>
+    
+    <div class="box" style="margin-left: 4%;margin-right: 4%;">
+        
+
+        <app-tabla-transacciones-matricula
+            [transacciones]="transaccionescoche">
+        </app-tabla-transacciones-matricula>
+    </div>
+
+</html>

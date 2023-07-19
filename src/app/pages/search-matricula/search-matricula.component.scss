@@ -1,0 +1,26 @@
+.container-4 input#search{
+    width: 75%;
+    height: 50px;
+    background: #2b303b;
+    border: none;
+    font-size: 10pt;
+    float: left;
+    color: #fff;
+    padding-left: 15px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}   
+.butt {
+float: left;
+width: 10%;
+padding: 10px;
+background: #2c3034;
+color: white;
+font-size: 17px;
+border: 1px solid grey;
+border-left: none; /* Prevent double borders */
+cursor: pointer;
+margin-left: 1px;
+height: 50px;
+}
